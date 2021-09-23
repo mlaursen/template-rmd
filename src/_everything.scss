@@ -1,0 +1,9 @@
+@use '@react-md/theme/dist/color-palette' as colors;
+@forward 'react-md' with
+  (
+    $rmd-theme-primary: colors.$rmd-purple-500,
+    $rmd-theme-secondary: colors.$rmd-pink-a-200,
+    $rmd-theme-light: true,
+    $rmd-theme-dark-class: 'prefers-color-scheme',
+    $rmd-utils-auto-dense: true
+  );

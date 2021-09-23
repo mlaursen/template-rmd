@@ -1,0 +1,15 @@
+@use '../everything' as *;
+
+@include react-md-utils;
+
+@if $rmd-theme-dark-class == 'prefers-color-scheme' {
+  @media (prefers-color-scheme: dark) {
+    :root {
+      @include rmd-theme-dark;
+    }
+  }
+} @else if $rmd-theme-light {
+  #{$rmd-theme-dark-class} {
+    @include rmd-theme-dark;
+  }
+}
