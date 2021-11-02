@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@mlaursen/eslint-config', 'next/core-web-vitals'],
+  extends: ['@mlaursen/eslint-config', 'plugin:@next/next/recommended'],
 };
