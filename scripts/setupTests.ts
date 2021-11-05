@@ -5,7 +5,8 @@ import {
   DEFAULT_DESKTOP_LARGE_MIN_WIDTH,
 } from "react-md";
 
-if (typeof window.matchMedia !== "function") {
+// Add typeof window in case a test is run specificaly with "@jest-environment node"
+if (typeof window !== "undefined" && typeof window.matchMedia !== "function") {
   window.matchMedia = (query) => ({
     media: query,
     matches:
