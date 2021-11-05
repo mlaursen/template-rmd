@@ -9,13 +9,13 @@ import { Providers } from "../components/Providers";
 
 export default function App({ Component, pageProps }: AppProps): ReactElement {
   return (
-    <Layout>
-      <Head>
-        <title>react-md with next.js</title>
-      </Head>
-      <Providers>
+    <Providers>
+      <Layout>
+        <Head>
+          <title>react-md with next.js</title>
+        </Head>
         <Component {...pageProps} />
-      </Providers>
-    </Layout>
+      </Layout>
+    </Providers>
   );
 }
