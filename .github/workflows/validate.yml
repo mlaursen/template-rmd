@@ -11,15 +11,15 @@ on:
 
 jobs:
   validate:
-    name: Validate Using Node 14
+    name: Validate Using Node 16
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.3.4
 
       - name: Run Lint and Typecheck
-        uses: actions/setup-node@v2.4.0
+        uses: actions/setup-node@v2.4.1
         with:
-          node-version: 14
+          node-version: 16
           cache: yarn
 
       - run: yarn
