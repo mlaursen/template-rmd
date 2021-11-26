@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
-import { Text } from "react-md";
+import { Typography } from "react-md";
 
 export default function Home(): ReactElement {
-  return <Text>Hello, world!</Text>;
+  return <Typography>Hello, world!</Typography>;
 }
