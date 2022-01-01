@@ -7,7 +7,7 @@ import {
   ConfigurableIcons,
   Configuration,
   ErrorOutlineSVGIcon,
-  FileDownloadSVGIcon,
+  FileUploadSVGIcon,
   KeyboardArrowDownSVGIcon,
   KeyboardArrowLeftSVGIcon,
   KeyboardArrowRightSVGIcon,
@@ -20,7 +20,7 @@ import {
 const icons: ConfigurableIcons = {
   back: <KeyboardArrowLeftSVGIcon />,
   checkbox: <CheckBoxSVGIcon />,
-  download: <FileDownloadSVGIcon />,
+  download: <FileUploadSVGIcon />,
   dropdown: <ArrowDropDownSVGIcon />,
   error: <ErrorOutlineSVGIcon />,
   expander: <KeyboardArrowDownSVGIcon />,
