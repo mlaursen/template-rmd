@@ -5,5 +5,12 @@
   $rmd-theme-light: true,
   $rmd-theme-dark-class: 'prefers-color-scheme',
   $rmd-utils-auto-dense: true,
-  $rmd-utils-enable-rtl: false
+  // I normally don't need to support languages other than English
+  $rmd-utils-enable-rtl: false,
+  // I never use the `dense` prop on icons
+  $rmd-icon-include-dense: false,
+  // I only use svg icons
+  $rmd-icon-use-font-icons: false,
+  // I don't use vertical sliders
+  $rmd-slider-include-vertical: false
 );

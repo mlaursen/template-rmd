@@ -3,7 +3,6 @@ import {
   LayoutNavigationTree,
   LayoutNavigationItem,
   HomeSVGIcon,
-  // TvSVGIcon,
 } from "react-md";
 
 /**
@@ -15,7 +14,7 @@ import {
 function createRoute(
   pathname: string,
   children: string,
-  leftAddon: ReactNode | undefined,
+  leftAddon?: ReactNode,
   parentId: string | null = null
 ): LayoutNavigationItem {
   return {
@@ -27,9 +26,10 @@ function createRoute(
   };
 }
 
-const navItems: LayoutNavigationTree = {
-  "/": createRoute("/", "Home", <HomeSVGIcon />),
-  // "/route-1": createRoute("/route-1", "Route 1", <TvSVGIcon />),
-};
-
-export default navItems;
+export const navItems = [
+  createRoute("/", "Home", <HomeSVGIcon />),
+  // createRoute("/route-1", "Route 1", <SomeSVGIcon />),
+].reduce<LayoutNavigationTree>((tree, route) => {
+  tree[route.itemId] = route;
+  return tree;
+}, {});
