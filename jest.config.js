@@ -21,6 +21,9 @@ module.exports = {
     // index files are always `export * from "..."`
     '!<rootDir>/src/**/index.ts',
   ],
+  transform: {
+    '\\.(jpe?g|png|gif)$': '<rootDir>/scripts/nextImageTransformer.js',
+  },
   moduleNameMapper: {
     '^.+\\.module\\.(scss)$': 'identity-obj-proxy',
   },
