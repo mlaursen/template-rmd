@@ -61,6 +61,13 @@ yarn cypress open
 - [codeql_analysis.yml](./.github/workflows/codeql_analysis.yml) - check for
   security issues in code
 
+## Git Tags
+
+New tags will be created after a new `react-md` version or when a major change
+happens in the repo. The tags can be used to see a diff of changes by using the
+"compare" view after
+[viewing a specific tag](https://github.com/mlaursen/template-rmd/tags).
+
 [prettier]: https://prettier.io
 [react-md]: https://react-md.dev
 [husky]: https://typicode.github.io/husky/#/
