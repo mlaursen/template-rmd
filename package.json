@@ -40,7 +40,7 @@
     "prettier": "^2.5.1",
     "sass": "^1.48.0",
     "ts-jest": "^27.1.3",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.5"
   },
   "lint-staged": {
     "**/*.{ts,tsx,scss,js,jsx,md,yml,json}": [
