@@ -4,23 +4,23 @@ import {
   ArrowUpwardSVGIcon,
   CheckBoxSVGIcon,
   CheckSVGIcon,
-  ConfigurableIcons,
   Configuration,
+  ConfiguredIcons,
   ErrorOutlineSVGIcon,
   FileUploadSVGIcon,
   KeyboardArrowDownSVGIcon,
   KeyboardArrowLeftSVGIcon,
   KeyboardArrowRightSVGIcon,
   MenuSVGIcon,
+  MenuConfiguration,
   NotificationsSVGIcon,
   RadioButtonCheckedSVGIcon,
   RemoveRedEyeSVGIcon,
 } from "react-md";
 
-const icons: ConfigurableIcons = {
+const icons: ConfiguredIcons = {
   back: <KeyboardArrowLeftSVGIcon />,
   checkbox: <CheckBoxSVGIcon />,
-  download: <FileUploadSVGIcon />,
   dropdown: <ArrowDropDownSVGIcon />,
   error: <ErrorOutlineSVGIcon />,
   expander: <KeyboardArrowDownSVGIcon />,
@@ -31,6 +31,11 @@ const icons: ConfigurableIcons = {
   radio: <RadioButtonCheckedSVGIcon />,
   selected: <CheckSVGIcon />,
   sort: <ArrowUpwardSVGIcon />,
+  upload: <FileUploadSVGIcon />,
+};
+
+const menuConfiguration: MenuConfiguration = {
+  renderAsSheet: "phone",
 };
 
 export interface ProvidersProps {
@@ -38,5 +43,9 @@ export interface ProvidersProps {
 }
 
 export function Providers({ children }: ProvidersProps): ReactElement {
-  return <Configuration icons={icons}>{children}</Configuration>;
+  return (
+    <Configuration icons={icons} menuConfiguration={menuConfiguration}>
+      {children}
+    </Configuration>
+  );
 }
