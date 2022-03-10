@@ -1,18 +1,17 @@
 import type { ReactElement, ReactNode } from "react";
+import type { ConfiguredIcons, MenuConfiguration } from "react-md";
 import {
   ArrowDropDownSVGIcon,
   ArrowUpwardSVGIcon,
   CheckBoxSVGIcon,
   CheckSVGIcon,
   Configuration,
-  ConfiguredIcons,
   ErrorOutlineSVGIcon,
   FileUploadSVGIcon,
   KeyboardArrowDownSVGIcon,
   KeyboardArrowLeftSVGIcon,
   KeyboardArrowRightSVGIcon,
   MenuSVGIcon,
-  MenuConfiguration,
   NotificationsSVGIcon,
   RadioButtonCheckedSVGIcon,
   RemoveRedEyeSVGIcon,

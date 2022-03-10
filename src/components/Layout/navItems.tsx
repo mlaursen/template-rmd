@@ -1,9 +1,6 @@
 import type { ReactNode } from "react";
-import {
-  LayoutNavigationTree,
-  LayoutNavigationItem,
-  HomeSVGIcon,
-} from "react-md";
+import type { LayoutNavigationTree, LayoutNavigationItem } from "react-md";
+import { HomeSVGIcon } from "react-md";
 
 /**
  * Note: The `parentId` **must** be defaulted to `null` for the navigation tree

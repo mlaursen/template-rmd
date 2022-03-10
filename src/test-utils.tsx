@@ -1,11 +1,9 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 /* eslint-disable import/export */
-import {
-  render as baseRender,
-  RenderOptions,
-  RenderResult,
-} from "@testing-library/react";
-import { Fragment, ReactElement } from "react";
+import type { RenderOptions, RenderResult } from "@testing-library/react";
+import { render as baseRender } from "@testing-library/react";
+import type { ReactElement } from "react";
+import { Fragment } from "react";
 import {
   DEFAULT_DESKTOP_LARGE_MIN_WIDTH,
   DEFAULT_DESKTOP_MIN_WIDTH,
