@@ -25,6 +25,8 @@ module.exports = {
     '\\.(jpe?g|png|gif)$': '<rootDir>/scripts/nextImageTransformer.js',
   },
   moduleNameMapper: {
+    // https://github.com/microsoft/accessibility-insights-web/pull/5421#issuecomment-1109168149
+    '^nanoid': require.resolve('nanoid'),
     '^.+\\.module\\.(scss)$': 'identity-obj-proxy',
   },
   watchPlugins: [
