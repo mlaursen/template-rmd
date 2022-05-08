@@ -3,7 +3,10 @@ import type { LinkProps } from "next/link";
 import Link from "next/link";
 
 export interface LinkUnstyledProps
-  extends Omit<LinkProps, "children" | "passHref" | "onError">,
+  extends Omit<
+      LinkProps,
+      "children" | "passHref" | "onError" | "onClick" | "onMouseEnter"
+    >,
     Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "onError" | "href"> {}
 
 export function LinkUnstyled({
